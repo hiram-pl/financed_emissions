@@ -1,0 +1,44 @@
+,Table definition,,
+,"Monitoring of CO2 emissions from passenger cars, 2023 - Provisional data",,
+Name,Definition,Datatype,Cardinality
+ID,Identification number.,integer,1..1
+MS,Member state.,varchar(2),0..1
+Mp,Manufacturer pooling.,varchar(50),0..1
+VFN,Vehicle family identification number.,varchar(25),0..1
+Mh,Manufacturer name EU standard denomination .,varchar(50),0..1
+Man,Manufacturer name OEM declaration.,varchar(50),0..1
+MMS,Manufacturer name MS registry denomination .,varchar(125),0..1
+TAN,Type approval number.,varchar(50),0..1
+T,Type.,varchar(25),0..1
+Va,Variant.,varchar(25),0..1
+Ve,Version.,varchar(35),0..1
+Mk,Make.,varchar(25),0..1
+Cn,Commercial name.,varchar(50),0..1
+Ct,Category of the vehicle type approved.,varchar(5) ,0..1
+Cr,Category of the vehicle registered.,varchar(5) ,0..1
+M (kg),Mass in running order Completed/complete vehicle .,integer,0..1
+Mt,WLTP test mass.,integer,0..1
+Enedc (g/km),Specific CO2 Emissions (NEDC).,integer,0..1
+Ewltp (g/km),Specific CO2 Emissions (WLTP).,integer,0..1
+W (mm),Wheel Base.,integer,0..1
+At1 (mm),Axle width steering axle.,integer,0..1
+At2 (mm),Axle width other axle.,integer,0..1
+Ft,Fuel type.,varchar(25),0..1
+Fm,Fuel mode.,varchar(1) ,0..1
+Ec (cm3),Engine capacity.,integer,0..1
+Ep (KW),Engine power.,integer,0..1
+Z (Wh/km),Electric energy consumption.,integer,0..1
+IT,Innovative technology or group of innovative technologies.,varchar(25),0..1
+Ernedc (g/km),Emissions reduction through innovative technologies.,float,0..1
+Erwltp (g/km),Emissions reduction through innovative technologies (WLTP).,float,0..1
+De,Deviation factor.,float,0..1
+Vf,Verification factor.,integer,0..1
+R,Total new registrations.,integer,0..1
+Year,Reporting year.,integer,0..1
+Status,"P = Provisional data, F = Final data.",varchar(1) ,0..1
+Version_file,Internal versioning of deliverables.,varchar(10),0..1
+E (g/km),"Specific CO2 Emission. Deprecated value, only relevant for data until 2016.",float,0..1
+Er (g/km),"Emissions reduction through innovative technologies. Deprecated value, only relevant for data until 2016.",float,0..1
+Zr,Electric range.,integer,0..1
+Dr,Registration date.,date,0..1
+Fc,Fuel consumption.,float,0..1
