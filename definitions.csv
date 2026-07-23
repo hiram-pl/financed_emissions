@@ -18,7 +18,7 @@ Ct,Category of the vehicle type approved.,varchar(5) ,0..1
 Cr,Category of the vehicle registered.,varchar(5) ,0..1
 M (kg),Mass in running order Completed/complete vehicle .,integer,0..1
 Mt,WLTP test mass.,integer,0..1
-Enedc (g/km),Specific CO2 Emissions (NEDC).,integer,0..1
+Enedc (g/km),Specific CO2 Emissions (NEDC).,integer,0..1PO
 Ewltp (g/km),Specific CO2 Emissions (WLTP).,integer,0..1
 W (mm),Wheel Base.,integer,0..1
 At1 (mm),Axle width steering axle.,integer,0..1
