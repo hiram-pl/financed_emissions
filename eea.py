@@ -22,11 +22,11 @@ def score_rf_dataset(X_train, X_valid, y_train, y_valid):
     return mean_absolute_error(y_valid, preds)
 
 
-from xgboost import XGBoostRegressor
+from xgboost import XGBRegressor
 from sklearn.metrics import mean_absolute_error
 # Function for comparing different approaches
 def score_xgb_dataset(X_train, X_valid, y_train, y_valid):
-    model = XGBoostRegressor(n_estimators=100, random_state=0)
+    model = XGBRegressor(n_estimators=100, random_state=0)
     model.fit(X_train, y_train)
     preds = model.predict(X_valid)
     return mean_absolute_error(y_valid, preds)
