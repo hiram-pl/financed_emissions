@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# IMPORTANT: pin these to the versions on the machine where you TRAINED the
+# model and saved ice_model.pkl. A pickle saved under one xgboost/sklearn
+# version can fail to load under another. Run this locally to get your versions:
+#
+#   python -c "import sklearn,xgboost,pandas,numpy,joblib; \
+#     print(sklearn.__version__,xgboost.__version__,pandas.__version__,\
+#           numpy.__version__,joblib.__version__)"
+#
+# Then replace the == pins below with those exact numbers.
+# ---------------------------------------------------------------------------
+
+streamlit
+scikit-learn==1.8.0
+xgboost==3.4.0
+pandas==3.0.2
+numpy==2.4.4
+joblib==1.5.3
+requests
