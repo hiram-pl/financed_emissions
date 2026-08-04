@@ -102,12 +102,14 @@ def load_car_data(n: int = 160000, include_zr: bool = True) -> pd.DataFrame:
 def split_data(df: pd.DataFrame, test_size: float = 0.30):
     """Drop missing-target rows, then split into train/validation X and y.
 
-    Splitting before EDA/feature engineering avoids leaking test information
-    into decisions made on the training data.
+    X is restricted to the model FEATURES so that extra columns present for the
+    router (e.g. Zr electric range) do NOT leak into the model as passthrough
+    features. Splitting before EDA/feature engineering avoids leaking test
+    information into decisions made on the training data.
     """
     df = df.dropna(subset=[TARGET])
     y = df[TARGET]
-    X = df[[c for c in df.columns if c != TARGET]]
+    X = df[FEATURES]
     return train_test_split(X, y, test_size=test_size, random_state=SEED)
 
 
