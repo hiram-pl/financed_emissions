@@ -113,3 +113,32 @@ Python · pandas · scikit-learn · XGBoost · Streamlit
 
 *Independent portfolio project. Built on public data; not affiliated with any
 institution.*
+
+
+# Financed-emissions demo (Streamlit)
+ 
+Ties the two models together on the shared modules:
+- **Model A** (`src/emissions.py`) — per-vehicle gCO₂/km via the three-regime router
+- **Model B** (`src/portfolio.py`) — PCAF financed emissions + data-quality score
+## Expected repo layout
+```
+├── app.py
+├── requirements.txt
+├── .streamlit/config.toml
+├── src/
+│   ├── emissions.py
+│   └── portfolio.py
+└── models/
+    └── ice_model.pkl
+```
+ 
+## Run locally
+```
+pip install -r requirements.txt
+streamlit run app.py
+```
+ 
+## Deploy (clickable link)
+Push to GitHub → share.streamlit.io → **New app** → point at `app.py`.
+The vehicle tab runs the real trained pipeline; the portfolio tab uses a
+synthetic loan book (figures illustrative of the PCAF method).
