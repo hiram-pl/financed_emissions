@@ -26,7 +26,7 @@ problem shouldn't be modelled at all.**
 
 ## Why this project
 
-It started from a real problem: banks reporting *financed emissions* under PCAF
+I was initially inspired to create this project from a talk from the Chief Sustainability Officer at BNP Paribas Personal Finance. I found this problem to be a natural data science project, because banks reporting *financed emissions* under PCAF
 need a CO2 figure for every vehicle they finance, including ones with missing or
 unreliable data. This is a public-data proof-of-concept for that estimation step.
 Full reasoning is in the [methodology write-up](WRITEUP.md).
