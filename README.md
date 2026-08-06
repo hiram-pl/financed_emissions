@@ -3,9 +3,7 @@
 Estimating passenger-vehicle CO2 emissions from vehicle specifications — and
 knowing when *not* to use a machine-learning model to do it.
 
-**[Live demo](#)** · **[Methodology write-up](WRITEUP.md)**
-
-> Replace the live-demo link with your Streamlit URL once deployed.
+**[Live demo](https://hiram-pl.github.io/financed_emissions/)** · **[Streamlit live demo](https://financed-emissions.streamlit.app/)** · **[Methodology write-up](WRITEUP.md)**
 
 ---
 
